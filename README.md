@@ -10,3 +10,7 @@ Da mesma maneira é possivel ver a mudança no valor do atributo quando mudamos 
 @keyup.enter é uma forma de escrever v-on:keyup.enter
 
 :disabled é uma forma de escreve v-bind:disabled
+
+Quando usar methods e computed?
+Methods para mudar valores de propriedades
+Computed para apresentá-los de maneira diferente que estão guardados (não modifica o dado)
