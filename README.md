@@ -6,3 +6,5 @@ ex:
 shoppingList.$data.items.push('Forth Item')
 Com Vue Dev Tools
 $vm0.$data.items.pop()
+Da mesma maneira é possivel ver a mudança no valor do atributo quando mudamos o input (o bind ocorre nos dois sentidos)
+@keyup.enter é uma forma de escrever v-on:keyup.enter

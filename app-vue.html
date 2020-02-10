@@ -3,11 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Shopping List App</title>
-        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <div id="shopping-list">
-            <h1>{{ header.toLocaleUpperCase() }}</h1>
+	<h1>{{ header.toLocaleUpperCase() }}</h1>
+	    <div>
+		<input v-model="newItem" type="text" placeholder="Add a new item" @keyup.enter="items.push(newItem)"></input>
+		<button v-on:click="items.push(newItem)">Save item</button>
+	    </div>
             <ul>
 		<li v-for="item in items">{{ item }}</li>
 	    </ul>
@@ -19,6 +22,7 @@
                 el: '#shopping-list',
                 data: {
                     header: 'Shopping list app',
+		    newItem: '',
 		    items: [
 			'First item',
 			'Second item',
